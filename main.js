@@ -23,8 +23,7 @@ function play(userChoice) {
         computerScore++;
     }
     
-    document.getElementById("result").innerText = result;
-    document.getElementById("score").innerText = "Punteggio: Giocatore " + playerScore + " - Computer " + computerScore + " - Pareggi " + draws;
+    document.getElementById("result").innerText = result;    
     document.getElementById("score1").innerText = playerScore;
     document.getElementById("score2").innerText = computerScore;
     document.getElementById("score3").innerText = draws;
