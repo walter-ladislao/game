@@ -1,9 +1,9 @@
 var playerScore = 0;
 var computerScore = 0;
-var draws = 0; // Variabile per tenere traccia dei pareggi
+var draws = 0;
 
 function play(userChoice) {
-    var choices = ["rock", "paper", "scissors"];
+    var choices = ["Sasso", "Carta", "Forbici"];
     var computerChoice = choices[Math.floor(Math.random() * 3)];
 
     var result;
@@ -12,9 +12,9 @@ function play(userChoice) {
         result = "Pareggio!";
         draws++; 
     } else if (
-        (userChoice === "rock" && computerChoice === "scissors") ||
-        (userChoice === "paper" && computerChoice === "rock") ||
-        (userChoice === "scissors" && computerChoice === "paper")
+        (userChoice === "Sasso" && computerChoice === "Forbici") ||
+        (userChoice === "Carta" && computerChoice === "Sasso") ||
+        (userChoice === "Forbici" && computerChoice === "Carta")
     ) {
         result = "Hai vinto!";
         playerScore++;
@@ -22,14 +22,12 @@ function play(userChoice) {
         result = "Hai perso!";
         computerScore++;
     }
-
     
-    document.getElementById("result").innerText = "Hai scelto " + userChoice + ". Il computer ha scelto " + computerChoice + ". " + result;
+    document.getElementById("result").innerText = result;
     document.getElementById("score").innerText = "Punteggio: Giocatore " + playerScore + " - Computer " + computerScore + " - Pareggi " + draws;
     document.getElementById("score1").innerText = playerScore;
     document.getElementById("score2").innerText = computerScore;
     document.getElementById("score3").innerText = draws;
-    console.log(computerChoice);
-    
+    document.getElementById("pcChoice").innerText = computerChoice;    
 }
 

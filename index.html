@@ -25,7 +25,7 @@
                     <div class="gameDiv p-3 h-100 rounded-5">
                         <div class="container-fluid h-100">
                             <div class="row h-75">
-                                <div class="col-6 col-lg-4 bg-neonGreen rounded-4 ">
+                                <div class="col-6 col-lg-4 bg-neonGreen rounded-4">
                                     <div class="container-fluid h-100">
                                         <div class="row  h-75">
                                             <div class="col-12 d-flex justify-content-center align-items-center">
@@ -40,9 +40,9 @@
                                                     <p class="press-start1 text-white">Fai la tua mossa!</p>
                                                 </div>
                                                 <div id="options" class="d-flex justify-content-evenly w-100">
-                                                    <button onclick="play('rock')" class="myButton">Sasso</button>
-                                                    <button onclick="play('paper')" class="myButton">Carta</button>
-                                                    <button onclick="play('scissors')" class="myButton">Forbice</button>
+                                                    <button onclick="play('Sasso')" class="myButton">Sasso</button>
+                                                    <button onclick="play('Carta')" class="myButton">Carta</button>
+                                                    <button onclick="play('Forbici')" class="myButton">Forbici</button>
                                                 </div>
                                             </div>                                            
                                         </div>
@@ -50,7 +50,15 @@
                                     
                                 </div>
                                 <div class="d-none col-4 d-lg-flex justify-content-center align-items-center">
-                                    <p class="press-start text-white">VS</p>
+                                    <div class="container-fluid h-100">
+                                        <div class="row h-100">
+                                            <div class="col-12 d-flex flex-column align-items-center justify-content-evenly">
+                                                <div id="result" class="press-start fs-3 text-center text-light">Risultato</div>
+                                                <div class="press-start text-light">VS</div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-6 col-lg-4 bg-neonGreen rounded-4">
                                     <div class="container-fluid h-100 ">
@@ -63,7 +71,7 @@
                                         </div>
                                         <div class="row  h-25">
                                             <div class="col-12 press-start1 fs-1 d-flex justify-content-center align-items-center text-light">
-                                                COMPUTER
+                                                <div id="pcChoice">COMPUTER</div>
                                             </div>                                            
                                         </div>
                                     </div>
@@ -102,10 +110,10 @@
         </div>
 
     </div>
-    <div id="game" class="d-none">
+    <div id="game" class="bg-danger">
         <h1>Sasso, Carta, Forbici</h1>
         
-        <div id="result"></div>
+        <div ></div>
         <div id="score">Punteggio: Giocatore 0 - Computer 0 - Pareggi 0</div>
     </div>
     <script src="main.js"></script>

@@ -50,7 +50,22 @@
     height: 3rem;
 }
 
-#result {
-    margin-top: 20px;
-    font-size: 18px;
+.myButton:hover{
+    
+    border: solid rgb(0, 0, 0);
+    
+    color: rgb(0, 0, 0);
+    
+    
 }
+
+.myButton:active{
+    background-color: rgba(254, 254, 254, 0.568);
+    border: solid rgb(0, 0, 0);
+    
+    color: rgb(0, 0, 0);
+    
+    
+}
+
+
