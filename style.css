@@ -1,0 +1,56 @@
+.bg-neonGreen{
+    background-color: rgb(144, 3, 238);
+}
+
+.press-start {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 400%;
+}
+
+.press-start1 {
+    font-family: "Press Start 2P", system-ui;
+}
+
+.gameDiv{
+    /* background-color: aqua; */
+    border: solid white;
+}
+
+.imagePic1{
+    height: 75%;
+    width: 60%;
+    border-radius: 50%;
+    background-color: rgb(0, 255, 251);
+    background-image: url('./squiddy.png');
+    background-size: cover;
+    background-position: center;
+    border: solid white;
+}
+
+.imagePic2{
+    height: 75%;
+    width: 60%;
+    border-radius: 50%;
+    background-image: url('./gengar.png');
+    background-size: cover;
+    background-position: center;
+    border: solid white;
+}
+
+
+
+.myButton{
+    background-color: rgba(240, 248, 255, 0);
+    border: solid white;
+    border-radius: 3px;
+    color: white;
+    font-family: "Press Start 2P", system-ui;
+    height: 3rem;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+}
